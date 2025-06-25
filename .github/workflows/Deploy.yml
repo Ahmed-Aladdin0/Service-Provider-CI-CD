@@ -8,7 +8,7 @@ on:
 env:
   APP_NAME: "service-provider"
   RESOURCE_GROUP: "docker-SC"
-  DOCKER_IMAGE: "docker.io/ahmedaladdin0/service-provider:latest"
+  DOCKER_IMAGE: "docker.io/ahmedaladdin0/service-provider:${{ github.sha }}"
 
 jobs:
   build-deploy:
